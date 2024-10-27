@@ -11,6 +11,9 @@ public class CreateGraph{
     }
 
     public static void createGraph(ArrayList<Edge> graph[]){
+        for (int i = 0; i < V; i++) {  
+            graph[i] = new ArrayList<>();  //initialize the indices of array with empty arraylists
+        }
         
         graph[0].add(new Edge(0,1));
         graph[0].add(new Edge(0,2));
